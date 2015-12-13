@@ -4,7 +4,7 @@ var pikachu = {
   vida: 100,
   ataque: 55,
   win: function () {
-    console.log('Ha ganado Pikachu');
+  alert('Ha ganado Pikachu');
   }
 }
 
@@ -12,7 +12,7 @@ var jigly = {
   vida: 100,
   ataque: 45,
   win: function() {
-    console.log('Ha ganado Jigly');
+    alert('Ha ganado Jigly');
   }
 }
 
@@ -29,7 +29,7 @@ while (pikachu.vida > 0 && jigly.vida > 0) {
 }
 
 if (pikachu.vida <= 0) {
-  alert(jigly.win());
+  jigly.win();
 } else {
-  alert(pikachu.win());
+  pikachu.win();
 }
